@@ -1,0 +1,10 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: EdgeMET_Demo_v3
+  gitServerName: VLPO_REPO_GITEX_ACP
+  gitUrl: https://github.com/v1adp0s2/EdgeMET_Demo_v3
+  gitUsername: v1adp0s2
+  gitToken: edge.scaffolding.EdgeMET_Demo_v3.VLPO_REPO_GITEX_ACP.gitToken
+  gitBranch: main
