@@ -1,6 +1,58 @@
 version: "1.0"
 info:
   model: int-scaffold
+services:
+- serviceName: edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: EdgeMET_Demo_v3
+    version: "1.0"
+configurationVariables:
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : demo-wm-mssql
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : wm-demo
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}3Q/DheX9dMA8VOnPUYxzL5UbwnlY3BVjnHcvc4175mk="
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "0"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : sa
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.EdgeMET_Demo_v3.edge.met_demo_v3.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;
 packages:
 - name: EdgeMET_Demo_v3
   gitServerName: VLPO_REPO_GITEX_ACP
@@ -8,3 +60,7 @@ packages:
   gitUsername: v1adp0s2
   gitToken: edge.scaffolding.EdgeMET_Demo_v3.VLPO_REPO_GITEX_ACP.gitToken
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.softwareag.com
+  wpmRegistry: softwareag
+  wpmToken: edge.scaffolding.WmJDBCAdapter.https://packages.softwareag.com.wpmToken
